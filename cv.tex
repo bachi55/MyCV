@@ -1,0 +1,116 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\moderncvstyle{classic}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage[utf8]{inputenc}
+
+% Inline citation
+\usepackage[maxnames=6]{biblatex}  
+\addbibresource{references.bib}
+
+\usepackage[scale=0.75]{geometry}
+\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+
+% personal data
+\name               {Eric}{Bach}
+\title              {Curriculum Vitae} 
+\address            {Muusantori 5A 18, 00350 Helsinki}%
+                    {}%
+%                     {Finland}
+\phone[mobile]      {+358~40~5893344}
+\email              {eric.bach@aalto.fi}
+
+\begin{document}
+\makecvtitle
+
+\section{About me}  
+        \cvitem{}{I am a Computer Scientist and Machine Learning expert with strong knowledge in Computational Metabolomics.}
+        \cvitem{}{I work quality centered and solution oriented with the attitude to provide the right computational tools for biological questions.}
+        \cvitem{}{I am a team player with effective communication skills and ready tell my opinion.}
+        \cvitem{Keywords}{Friendly, Knowledgable, Curios, Self critical, Foresightful}
+
+\section{Education}
+        \cventry{8/2016 -- present}{Doctoral Candidate}{Aalto University $\cdot$ School of Science}{Espoo}{Finnland}{In \href{https://research.cs.aalto.fi/kepaco/}{KEPACO bioinformatics research group} under supervision of Prof. Juho Rousu \\ \emph{Topic: Machine Learning for Computational Metabolomics}}
+        %\cventry{8/2016}{Graduated with a M.Sc. Computer Science}{Friedrich-Schiller-Universität (FSU)}{Jena}{}{Thesis topic: Metabolite Identification using Magnitude-preserving Input Output Kernel Regression}
+        \cventry{4/2013 -- 8/2016}{M.Sc. Computer Science}{FSU}{Jena}{}{Major: Digital Image Processing, Minor: Machine Learning \& Data-Mining}
+        \cventry{10/2015 -- 7/2016}{Master's thesis}{Aalto University $\cdot$ School of Science}{Espoo}{Finnland}{\emph{Metabolite Identification using Magnitude-preserving Input Output Kernel Regression}}
+        %\cventry{9/2013 -- 6/2014}{Exchange year in Finland}{Itä-Suomen yliopisto}{Joensuu}{}{}
+        %\cventry{4/2013}{Graduated with a B.Sc. in Applied Computer Science}{FSU}{Jena}{}{Thesis topic: Adaption of a semantic segmentation algorithm for remote sensing purposes}
+        \cventry{10/2009 -- 4/2013}{B.Sc. Applied Computer Science}{FSU}{Jena}{}{Minor (40 ECTS): Computational Neuroscience, Studies encompassed  210 ECTS \\ \textsl{Thesis: Adaption of a Semantic Segmentation Algorithm for Remote Sensing Data}}
+        %\cventry{9/2006 -- 7/2009}{Abitur (German A level)}{Fürst-Pückler-Gymnasium}{Cottbus}{}{}
+
+% \section{Master's Thesis}
+%         \cvitem{Title}{Metabolite Identification using Magnitude-preserving Input Output Kernel Regression}
+%         \cvitem{Supervisor}{Prof. Juho Rousu \& PhD Celine Brouard}
+%         \cvitem{Abstract}{I applied a kernelized machine learning algorithm for structured prediction called Input Output Kernel Regression (IOKR) for the structural annotation of small molecules using their tandem mass spectra (MS2). I extended IOKR to use a magnitude preserving loss. This allowed me train the algorithm using the information of millions of candidate molecular structures from the MS2 training data set. This extension lead to a significant improvement of the molecule identification performance.}
+%         \cvitem{Publication}{\fullcite{Brouard2017}}
+
+\section{Doctoral studies}
+        \cvitem{Abstract}{I am developing machine learning based metabolomics data analysis pipelines to identify small molecules in biological samples using data arising in mass spectrometry analyses. My main focus lays in the integration of orthogonal compound information, e.g. liquid chromatography retention times, to improve the de-novo discovery of molecules.}
+        \cvitem{Methods}{I am using kernel methods, e.g. Support Vector Machines, as machine learning framework. This covers the theoretical development of new algorithms until the practical implementation. I talk to mass spectrometry domain experts, evaluate the relevant literature and learn about the technical aspects of mass spectrometry devices, to ensure the relevance of my research. I integrate publicly available data to allow joint use as databases for my experiments. I manage my data using relational databases. I effectively communicate my research with others using presentations and reports.}
+        \cvitem{Responsibilities}{I am defining the ``What?'' and ``How?'' in my research. I structure my tasks and plan in foresighted manner, how to conduct my research. I do quality assurance for my experiments and results, e.g. automated code-testing and review processes. I am teaching university students in machine learning and bioinformatics. I design educational tasks in kernel methods, evaluate students and give constructive feedback. I organize contact teaching events for students, e.g. Question \& Answer sessions.}
+%         \cvitem{Publication}{\fullcite{Bach2018}}
+
+\section{Relevant work-experience}
+        %\cventry{10/2015 -- 7/2106}{Master's Thesis}{KEPACO}{Aalto University}{Espoo}{I applied a kernelized machine learning algorithm for structured prediction called Input Output Kernel Regression (IOKR) for the structural annotation of small molecules using their tandem mass spectra (MS2). I extended IOKR to use a magnitude preserving loss. This allowed me train the algorithm using the information of millions of candidate molecular structures from the MS2 training data set. This extension lead to a significant improvement of the molecule identification performance.}
+        
+
+        \cventry{4/2011 -- 7/2013 \\ 10/2014 -- 8/2015}{Research assistant}{Computer Vision Group}{FSU}{Jena}{I researched in the fields of semantic image segmentation (image classification), object detection and deep-neural-networks. This included designing, implementing and extending algorithms in C++, R and Matlab in a Linux environment. I practiced understanding others' source code and tailoring implementations to specific tasks. I was responsible for the scheduling, the efficiency and the documentation of my work. I could apply knowledge from my university courses straight in practice and gained experience in presentations and problem orientated discussions. I pre-processed data-sets, conducted experiments (e.g. parameter estimation and performance measurements) and reported the evaluation results (e.g. to external industry collaborators). I read and utilized state-of-the-art scientific publications.} % end of cventry
+                      
+        %\cventry{4/2012 -- 12/2012}{Internship}{Structural Brain Mapping Group}{FSU}{Jena}{I extended a univariate statistical model that represents major tissue classes in single-channel magnetic resonance (MR) cerebral images to a multivariate model for multichannel images. During this work I gained deeper insight into multivariate mixtures of Gaussian (GMM), parameter estimation using the estimation-maximization algorithm (EM-Algorithm) and image segmentation. I implemented the extension in the programming language C, I ran qualitative and quantitative evaluations and I documented my work in a report.} % end of cventry
+                    
+% \section{Bachelors Thesis}
+%                     \cvitem{Title}{Adaption von Verfahren der
+% Semantischen Segmentierung für Erdbeobachtungsszenarien \newline{} \textsl{(Adaption of semantic segmentation algorithms for remote sensing)}}
+% 
+%                     \cvitem{Supervisor}{Björn Fröhlich, (former) PhD student of Computer Vision Group, FSU, Jena}
+% 
+%                     \cvitem{Abstract}{I applied a random decision forest for semantic segmentation to produce automatized land-cover classifications of images from satellites and airplanes. I tailored the implementation of the classification algorithm, in order to handle the huge amounts of data and evaluated its quality on multispectral and high-resolution images.}
+%                     
+\section{Technical expertise}
+\subsection{Programming Languages}
+        \cvitem{Matlab ($>$4 years)}{Machine Learning (kernel methods, graphical models), Prototyping}
+        \cvitem{R ($>$4 years)}{Data visualization \& organization (\texttt{ggplot, data.frame}), Processing molecular structures (\texttt{rcdk}), Statistical analyses}
+        \cvitem{bash ($>$4 years)}{Automatization of experiments, Operating Linux environments}
+        \cvitem{Python ($>$2 years)}{Machine learning (\texttt{sklearn}), Database administration (\texttt{sqlite3}), Molecule feature processing (\texttt{rdkit}), Jupyter Notebooks, Python education for students}
+        \cvitem{C++ ($>$2 years)}{algorithm implementation \& software development}
+        \cvitem{Java ($>$1 year)}{Molecular structure processing cheminformatics (\texttt{CDK})}
+        
+%\newpage
+\subsection{General}        
+        \cvitemwithcomment{Distributed computing}{SLURM}{experience using workload manager to run large scale machine learning tasks on cluster systems}
+        \cvitemwithcomment{Version control}{git}{experience in using version control for various projects}
+        \cvitemwithcomment{Typesetting}{\LaTeX}{reports, documentations \& presentations}
+        \cvitemwithcomment{Relational Databases}{SQLite}{Organizing experimental data, Fast query of molecular structures, Unified data representation from different sources}
+        
+\section{Publications}
+        \cvitem{}{\fullcite{Bach2020}}
+        \cvitem{}{\fullcite{Bach2018}}
+        \cvitem{}{\fullcite{Brouard2017}}
+        \cvitem{}{\fullcite{Frohlich2013}}
+        
+        
+% %                     
+% \section{Projects}
+% \subsection{Machine Learning}
+% %         \cvtime{}
+% \subsection{Programming}
+% %         \cvitme{}
+%         
+% \subsection{Relational Databases}
+%         \cvitem{SQLite}{Local copy of PubChem (\href{https://version.aalto.fi/gitlab/bache1/construct_locaL_pubchem_db/}{project code})}
+
+
+% \section{Languages}
+%                     \cvitemwithcomment{German}{native}{}
+%                     \cvitemwithcomment{English}{very good verbal and textual communication}{}
+%                     \cvitemwithcomment{Finnish}{basic knowledge}{A1}
+%                     \cvitemwithcomment{Polish}{basic knowledge}{A2}
+%                     
+% \section{Interests}
+%                     \cvitemwithcomment{Sports}{running \& volleyball}{participation in the university's volleyball courses}
+%                     \cvitemwithcomment{Activities}{biking, hiking, cooking \& museum visits}{}
+%                     \cvitemwithcomment{Hobbies}{bicycle repairing, handicraft \& reading}{}
+%                     \cvitemwithcomment{General}{sustainable individual mobility \& politics}{}                    
+\end{document}
