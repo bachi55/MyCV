@@ -1,0 +1,71 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\moderncvstyle{classic}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage[utf8]{inputenc}
+
+% Inline citation
+\usepackage[maxnames=6,style=authoryear]{biblatex}  
+\addbibresource{my_publications.bib}
+
+\usepackage[scale=0.75]{geometry}
+\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+
+% personal data
+\name               {Eric}{Bach}
+\title              {Curriculum Vitae} 
+\address            {Muusantori 5A 18, 00350 Helsinki, Finland}%
+                    {}%
+\phone[mobile]      {+358~40~5893344} 
+\email              {eric.bach@aalto.fi}
+
+\begin{document}
+\makecvtitle
+ 
+\section{About me}   
+        \cvitem{}{I am a computer scientist and machine learning expert with strong knowledge in computational metabolomics.}
+        \cvitem{}{I work quality- and solution-oriented with the attitude to provide the right computational tools answering challenging problems in metabolomics.}
+        \cvitem{}{I am a team player with effective communication skills and ready tell my opinion.}
+        \cvitem{Keywords}{Friendly, Knowledgable, Curios, Self critical, Foresightful}
+
+\section{Education}
+        \cventry{8/2016 -- present}{Doctoral Candidate}{Aalto University $\cdot$ School of Science}{Espoo}{Finland}{In \href{https://research.cs.aalto.fi/kepaco/}{KEPACO bioinformatics research group} under supervision of Prof. Juho Rousu \\ \emph{Topic: Machine Learning for Computational Metabolomics}}
+        \cventry{4/2013 -- 8/2016}{M.Sc. Computer Science}{FSU}{Jena}{Germany}{Major: Digital Image Processing, Minor: Machine Learning \& Data-Mining}
+        \cventry{10/2015 -- 7/2016}{Master's thesis}{Aalto University $\cdot$ School of Science}{Espoo}{}{\emph{Metabolite Identification using Magnitude-preserving Input Output Kernel Regression}}
+        \cventry{10/2009 -- 4/2013}{B.Sc. Applied Computer Science}{FSU}{Jena}{}{Minor (40 ECTS): Computational Neuroscience, Studies encompassed  210 ECTS \\ \textsl{Thesis: Adaption of a Semantic Segmentation Algorithm for Remote Sensing Data}}
+
+\section{Doctoral studies}
+        \cvitem{Abstract}{I am developing machine learning (ML) methods for 
+        the automatized annotation of high-throughput untargeted metabolomics data arising in liquid chromatography (LC) tandem mass spectrometry (MS$^2$) experiments. My focus lays in the integration of orthogonal information, e.g. LC retention times and MS$^2$ spectra, to improve the molecule identification performance.}
+        \cvitem{Methods}{On the machine learning side of my research I mainly utilise kernel methods, e.g. support vector machines. I develop novel approaches to integrate the orthogonal information sources in LC-MS$^2$ experiments. My tasks range from the mathematical description of my models till their practical implementation mainly using Python. On the metabolomics side, I aim to deeply understand the LC-MS$^2$ technology and measurement processes. I have a comprehensive knowledge of the data generation and the required processing, which allows me to map problems in metabolomics to ML frameworks.}
+
+\section{Selection of Machine Learning Projects}
+        \cvitem{\texttt{ROSVM} \\ \textcolor{gray}{\footnotesize \url{github.com/bachi55/rosvm}}}{Python package implementing a ranking support vector machine for molecule retention order prediction using conditional gradient descent. The object orientated implementation is compatible with \texttt{sklearn} to allowing seamless integration of \texttt{ROSVM} to ML pipelines. Feature extraction for molecules is implemented using \texttt{rdkit}.}
+        \cvitem{\texttt{msms\_scorer} \\ \textcolor{gray}{\footnotesize \url{github.com/aalto-ics-kepaco/msms_rt_score_integration}}}{Library for the integration of MS$^2$ spectra and LC retention order scores aiding the identification of small molecules in metabolomics by molecular structure candidate ranking. The scores are integrated using a markov random field and rankings are provided using approximated marginal inference on random spanning tree ensembles. The library allows for efficient parallel inference. }
+
+\section{Technical expertise}
+\subsection{Machine Learning (selected)}
+        \cvitem{Classical ML\\\textcolor{gray}{($>$6 years)}}{Kernel methods and structured prediction (metabolomics, mass spectrometry \& molecule data), Random Forests (remote sensing and automotive applications), Gaussian Mixture Models (MRI image segmentation)}
+        \cvitem{Deep Learning \textcolor{gray}{($>$2 years)}}{Convolutional Neural Networks (CNN) (visual object recognition), Graph-convolutional NN (molecule property prediction \& representation learning)}
+
+\subsection{Programming Languages (selected)}
+        \cvitem{Python \textcolor{gray}{($>$4 years)}}{Machine learning (\texttt{sklearn}), Database administration (\texttt{pandas, sqlite3}), Molecule processing (\texttt{rdkit}), Scientific Computing (\texttt{numpy, scipy, numba})}
+        \cvitem{R \textcolor{gray}{($>$6 years)}}{Data visualization \& organization (\texttt{ggplot, data.frame}), Processing molecular structures (\texttt{rcdk}), Statistical analyses}
+%         \cvitem{bash ($>$4 years)}{Automatization of experiments, Operating Linux environments}
+        \cvitem{Matlab \textcolor{gray}{($>$6 years)}}{Machine Learning (kernel methods, graphical models), Prototyping}
+        
+% \subsection{General}        
+%         \cvitemwithcomment{Distributed computing}{SLURM}{experience using workload manager to run large scale machine learning tasks on cluster systems}
+%         \cvitemwithcomment{Version control}{git}{version control for programming projects, familiar with issue and pull-request workflow, git archaeology}
+%         \cvitemwithcomment{Typesetting}{\LaTeX}{reports, documentations \& presentations}
+%         \cvitemwithcomment{Relational databases}{SQLite}{Organising experimental data, Unified data representation from different sources}
+        
+\section{Publications}
+        \cvitem{}{\fullcite{Bach2020}}
+        \cvitem{}{\fullcite{Szedmak2020}}
+        \cvitem{}{\fullcite{Bach2018}}
+        \cvitem{}{\fullcite{Brouard2017}}
+        \cvitem{}{\fullcite{Frohlich2013}}
+                
+\end{document}
